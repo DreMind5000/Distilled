@@ -35,10 +35,10 @@ yarn-error.log*
 .env.production.local
 
 # vercel
-.vercel
+
 
 node_modules
 
 #Hardhat files
 cache
-artifacts
+
