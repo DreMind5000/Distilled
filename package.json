@@ -2,7 +2,7 @@
   "name": "nft-marketplace-kryptobirdz",
   "version": "0.1.0",
   "private": true,
-  "hompage": "http://dremind5000.github.io/distilled",
+  "hompage": "http://dremind5000.github.io/Distilled",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
