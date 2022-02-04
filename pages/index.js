@@ -20,7 +20,7 @@ export default function Home() {
     // what we want to load:
     // ***provider, tokenContract, marketContract, data for our marketItems***
 
-    const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com")
+    const provider = new ethers.providers.JsonRpcProvider('https://rpc-mumbai.maticvigil.com')
     const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider)
     const marketContract = new ethers.Contract(nftmarketaddress, KBMarket.abi, provider)
     const data = await marketContract.fetchMarketTokens()
@@ -82,7 +82,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='p-4 bg-black'>
-                        <p className='text-3x-1 mb-4 font-bold text-white'>{nft.price} ETH</p>
+                        <p className='text-3x-1 mb-4 font-bold text-white'>{nft.price} MATIC</p>
                         <button className='w-full bg-purple-500 text-white font-bold py-3 px-12 rounded'
                         onClick={()=> buyNFT(nft)} >Buy
                         </button>
